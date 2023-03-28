@@ -116,8 +116,8 @@ pre {
     top: 0;
     left: 12px;
     margin-top: 12px;
-    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #c927b6;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #aa1ec2;
 }
 
 code {
@@ -1174,7 +1174,7 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #b72697;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
