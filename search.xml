@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>建立一个自己的博客</title>
+      <link href="/2023/03/28/jian-li-yi-ge-zi-ji-de-bo-ke/"/>
+      <url>/2023/03/28/jian-li-yi-ge-zi-ji-de-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>“决定建立博客以来，我前前后后从B站、百度、CSDN上浏览了大量的资料来了解网站建立的原理和方法，还学习了很多有趣的前端知识，但最终我还是历经艰辛，才完成了博客的建立和上传。这些可能和我本地的设置、版本兼容有一定关系，考虑到想要自建博客的同学可能也会遇到这样类似的麻烦，我在这里将简单记录一下建立博客的流程和建立博客时遇到的一些问题和解决方法。”</p></blockquote><h1 id="基础的概念"><a href="#基础的概念" class="headerlink" title="基础的概念"></a>基础的概念</h1><p>一个独立的个人博客是由一个<strong>本地的仓库</strong>，一个<strong>长期稳定运行的服务器</strong>，以及服务器上为<strong>你的博客生成的网址</strong>组成的，本博客采用hexo开发环境，用github作为代理服务器。</p><h1 id="博客建立的流程"><a href="#博客建立的流程" class="headerlink" title="博客建立的流程"></a>博客建立的流程</h1><h2 id="创建一个github账号"><a href="#创建一个github账号" class="headerlink" title="创建一个github账号"></a>创建一个github账号</h2><p>在默认电脑没有事先安装任何环境的情况下，我们首先需要申请一个github账号，由于国内网络环境的原因，github官网的网速往往不那么理想，这里博主采用的是Watt Toolkit（原名steam++）作为github的加速器。进入github官网，按照指示操作城建自己的个人博客。</p><h2 id="在github上建立一个自己的仓库-repository"><a href="#在github上建立一个自己的仓库-repository" class="headerlink" title="在github上建立一个自己的仓库 repository"></a>在github上建立一个自己的仓库 repository</h2><p>注意仓库名称一定要是 <u>yourname</u>.github.io ,这是我们后来建立网站服务器链接的基础，这里最好选择保存类型为public。</p><h2 id="配置git工具"><a href="#配置git工具" class="headerlink" title="配置git工具"></a>配置git工具</h2><p>Git是使用 hexo时必不可少的工具。<br>因为作为一个标准的程序员, 熟练使用 Github 和 Git 工具会使工作效率大大提升,git对以后的团队开发, 以及版本更新, 都是一个得力工具。用git还可以轻松实现VSCode代码一键上传到github仓库等迁移代码的操作，非常有用。</p><p>下载git工具就要搭建Nodejs环境Nodejs 是一个开源和跨平台的 JavaScript 运行时环境。它几乎是任何类型项目的流行工具.这里博主是在<a href="https://nodejs.org/en/download/" title="nodejs官网">https://nodejs.org/en/download/</a>进行的下载,下载64-bit.msi文件,运行文件后跟着指导一路next,这里我把文件安装路径修改为D:\nodejs\ 。此时在桌面右击打开Git Bash Here，输入node -v查看版本号，未报错，再输入npm -v 也未报错就表明安装成功，此时如果想要加速git的反应，我们通常选择输入npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org来安装淘宝的cnpm/">http://registry.npm.taobao.org来安装淘宝的cnpm</a> 管理器,cnpm是npm在国内的一个镜像站。</p><h2 id="创建本地仓库"><a href="#创建本地仓库" class="headerlink" title="创建本地仓库"></a>创建本地仓库</h2><p>在电脑的空闲盘里新建Blog文件夹（这里名称不用在意）进入创建的 blog 文件夹后, 右键空白处, 选择 Git Bash Here，然后再输入npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>（还是装了好一些）,然后输入cnpm,如果没报错，就表明镜像已经安装成功。</p><p>此时，我们就可以用较快的速度安装Hexo框架了。</p><h2 id="安装Hexo框架"><a href="#安装Hexo框架" class="headerlink" title="安装Hexo框架"></a>安装Hexo框架</h2><p>再Blog文件夹中右键空白处, 选择 Git Bash Here，输入cnpm install -g hexo-cli进行安装，完成后输入hexo -v查看版本，未报错即为安装成功。</p><h2 id="Hexo博客初始化"><a href="#Hexo博客初始化" class="headerlink" title="Hexo博客初始化"></a>Hexo博客初始化</h2><p>再上文提到的Git Bash Here继续操作，输入Hexo init进行博客初始化，这一步时间比较长，此时可以来一杯卡布奇诺<span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p><p>完成后输入hexo s启动本地的博客服务，<br>此时终端会返回一个本地运行的网址，复制这个网址（用右键不要用快捷键），到浏览器上打开，就可以看到你的hello world页面了。</p><p>注意，此时你的博客只存在于你的电脑，并未与任何网站相关联。</p><h2 id="关联我的github库"><a href="#关联我的github库" class="headerlink" title="关联我的github库"></a>关联我的github库</h2><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> process records </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的第一篇博客</title>
       <link href="/2023/03/27/wo-de-di-yi-pian-bo-ke/"/>
       <url>/2023/03/27/wo-de-di-yi-pian-bo-ke/</url>
