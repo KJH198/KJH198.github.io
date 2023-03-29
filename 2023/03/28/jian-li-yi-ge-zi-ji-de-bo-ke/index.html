@@ -420,13 +420,14 @@
 <p>完成后输入<code>hexo -v</code>查看版本，未报错即为安装成功。</p>
 <h2 id="Hexo博客初始化"><a href="#Hexo博客初始化" class="headerlink" title="Hexo博客初始化"></a>Hexo博客初始化</h2><p>在上文提到的Git Bash Here继续操作，输入<code>Hexo init</code>进行博客初始化，这一步时间通常比较长，此时可以来一杯卡布奇诺 <span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。</p>
 <p>新建完成后，指定文件夹的目录下有：</p>
-<pre><code>node_modules: 依赖包
-public：存放生成的页面
-scaffolds：生成文章的模板
-source：存放文章的仓库
-themes：主题文件
-_config.yml: 博客的配置文件
-</code></pre>
+<ul>
+<li>node_modules: 博客生成的依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成博客文章的模板</li>
+<li>source：存放博客文章的仓库</li>
+<li>themes：博客的主题文件</li>
+<li>_config.yml: 此即博客的配置文件</li>
+</ul>
 <p>这样本地的网站配置就弄好了。</p>
 <p>输入hexo g生成静态网页，然后输入<code>hexo s</code>打开本地服务器。</p>
 <p>此时终端会返回一个本地运行的网站，复制这个网址（用右键复制，不要用快捷键），到浏览器上打开，就可以看到你的Hello World页面了。</p>
@@ -434,7 +435,7 @@ _config.yml: 博客的配置文件
 <h2 id="部署git插件"><a href="#部署git插件" class="headerlink" title="部署git插件"></a>部署git插件</h2><p>在上文提到的Git Bash Here继续操作，输入<code>cnpm install --save hexo-deployer-git</code>，未报错表明安装成功。</p>
 <p>这是关于我们进行博客文件上传的插件，十分重要。</p>
 <h2 id="配置链接文件，关联github"><a href="#配置链接文件，关联github" class="headerlink" title="配置链接文件，关联github"></a>配置链接文件，关联github</h2><p>配置 blog 目录下的 _config.yml 文件，这个文件可以通过 VScode 打开。打开后找到deploy部分，如果没有就自己复制粘贴进去。</p>
-<pre><code>`deploy:
+<pre><code>`deploy:`
 
     `type: git`
 
